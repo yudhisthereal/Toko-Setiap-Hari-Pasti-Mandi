@@ -1,0 +1,4 @@
+D:\Projects\Visual Studio\Tugas Pemdas GUI 1\Toko Setiap Hari Pasti Mandi\Toko Setiap Hari Pasti Mandi\x64\Release\Toko Setiap Hari Pasti Mandi.vcxproj.AssemblyReference.cache
+D:\Projects\Visual Studio\Tugas Pemdas GUI 1\Toko Setiap Hari Pasti Mandi\Toko Setiap Hari Pasti Mandi\x64\Release\Toko Setiap Hari Pasti Mandi.vcxproj.SuggestedBindingRedirects.cache
+D:\Projects\Visual Studio\Tugas Pemdas GUI 1\Toko Setiap Hari Pasti Mandi\Toko Setiap Hari Pasti Mandi\x64\Release\TokoSetiapHariPastiMandi.MyForm.resources
+D:\Projects\Visual Studio\Tugas Pemdas GUI 1\Toko Setiap Hari Pasti Mandi\Toko Setiap Hari Pasti Mandi\x64\Release\Toko Setiap Hari Pasti Mandi.vcxproj.GenerateResource.cache
