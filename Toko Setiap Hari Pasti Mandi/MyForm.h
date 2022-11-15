@@ -144,6 +144,9 @@ private: System::Windows::Forms::Label^ stok_item2;
 private: System::Windows::Forms::Label^ label31;
 private: System::Windows::Forms::Label^ stok_item3;
 private: System::Windows::Forms::Label^ stok_item1;
+private: System::Windows::Forms::Label^ label30;
+private: System::Windows::Forms::Label^ transaction_date;
+private: System::Windows::Forms::Label^ label32;
 private: System::Windows::Forms::Label^ label36;
 
 
@@ -213,6 +216,9 @@ private: System::Windows::Forms::Label^ label36;
 			this->total_price = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->nota = (gcnew System::Windows::Forms::Panel());
+			this->label30 = (gcnew System::Windows::Forms::Label());
+			this->transaction_date = (gcnew System::Windows::Forms::Label());
+			this->label32 = (gcnew System::Windows::Forms::Label());
 			this->belanjalagi_button = (gcnew System::Windows::Forms::Button());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label25 = (gcnew System::Windows::Forms::Label());
@@ -892,6 +898,9 @@ private: System::Windows::Forms::Label^ label36;
 			// 
 			this->nota->BackColor = System::Drawing::Color::Bisque;
 			this->nota->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->nota->Controls->Add(this->label30);
+			this->nota->Controls->Add(this->transaction_date);
+			this->nota->Controls->Add(this->label32);
 			this->nota->Controls->Add(this->belanjalagi_button);
 			this->nota->Controls->Add(this->label19);
 			this->nota->Controls->Add(this->label25);
@@ -914,17 +923,45 @@ private: System::Windows::Forms::Label^ label36;
 			this->nota->Controls->Add(this->label13);
 			this->nota->Controls->Add(this->label11);
 			this->nota->Controls->Add(this->label6);
-			this->nota->Location = System::Drawing::Point(435, 192);
+			this->nota->Location = System::Drawing::Point(435, 169);
 			this->nota->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->nota->Name = L"nota";
-			this->nota->Size = System::Drawing::Size(629, 392);
+			this->nota->Size = System::Drawing::Size(629, 415);
 			this->nota->TabIndex = 7;
 			this->nota->Visible = false;
+			// 
+			// label30
+			// 
+			this->label30->Location = System::Drawing::Point(150, 67);
+			this->label30->Name = L"label30";
+			this->label30->Size = System::Drawing::Size(327, 16);
+			this->label30->TabIndex = 23;
+			this->label30->Text = L"Jl. Cempaka No. 03, Atlantis";
+			this->label30->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// transaction_date
+			// 
+			this->transaction_date->AutoSize = true;
+			this->transaction_date->Location = System::Drawing::Point(499, 137);
+			this->transaction_date->Name = L"transaction_date";
+			this->transaction_date->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
+			this->transaction_date->Size = System::Drawing::Size(51, 16);
+			this->transaction_date->TabIndex = 22;
+			this->transaction_date->Text = L"label19";
+			// 
+			// label32
+			// 
+			this->label32->AutoSize = true;
+			this->label32->Location = System::Drawing::Point(72, 137);
+			this->label32->Name = L"label32";
+			this->label32->Size = System::Drawing::Size(113, 16);
+			this->label32->TabIndex = 21;
+			this->label32->Text = L"Tanggal Belanja :";
 			// 
 			// belanjalagi_button
 			// 
 			this->belanjalagi_button->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->belanjalagi_button->Location = System::Drawing::Point(175, 351);
+			this->belanjalagi_button->Location = System::Drawing::Point(175, 373);
 			this->belanjalagi_button->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->belanjalagi_button->Name = L"belanjalagi_button";
 			this->belanjalagi_button->Size = System::Drawing::Size(277, 23);
@@ -936,7 +973,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label19
 			// 
 			this->label19->AutoSize = true;
-			this->label19->Location = System::Drawing::Point(224, 201);
+			this->label19->Location = System::Drawing::Point(267, 247);
 			this->label19->Name = L"label19";
 			this->label19->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->label19->Size = System::Drawing::Size(87, 16);
@@ -946,7 +983,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label25
 			// 
 			this->label25->AutoSize = true;
-			this->label25->Location = System::Drawing::Point(224, 175);
+			this->label25->Location = System::Drawing::Point(267, 221);
 			this->label25->Name = L"label25";
 			this->label25->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->label25->Size = System::Drawing::Size(80, 16);
@@ -956,7 +993,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label26
 			// 
 			this->label26->AutoSize = true;
-			this->label26->Location = System::Drawing::Point(224, 149);
+			this->label26->Location = System::Drawing::Point(267, 195);
 			this->label26->Name = L"label26";
 			this->label26->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->label26->Size = System::Drawing::Size(80, 16);
@@ -966,7 +1003,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_jumlahitem3
 			// 
 			this->nota_jumlahitem3->AutoSize = true;
-			this->nota_jumlahitem3->Location = System::Drawing::Point(349, 201);
+			this->nota_jumlahitem3->Location = System::Drawing::Point(392, 247);
 			this->nota_jumlahitem3->Name = L"nota_jumlahitem3";
 			this->nota_jumlahitem3->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_jumlahitem3->Size = System::Drawing::Size(20, 16);
@@ -976,7 +1013,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_jumlahitem2
 			// 
 			this->nota_jumlahitem2->AutoSize = true;
-			this->nota_jumlahitem2->Location = System::Drawing::Point(349, 175);
+			this->nota_jumlahitem2->Location = System::Drawing::Point(392, 221);
 			this->nota_jumlahitem2->Name = L"nota_jumlahitem2";
 			this->nota_jumlahitem2->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_jumlahitem2->Size = System::Drawing::Size(20, 16);
@@ -986,7 +1023,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_jumlahitem1
 			// 
 			this->nota_jumlahitem1->AutoSize = true;
-			this->nota_jumlahitem1->Location = System::Drawing::Point(349, 149);
+			this->nota_jumlahitem1->Location = System::Drawing::Point(392, 195);
 			this->nota_jumlahitem1->Name = L"nota_jumlahitem1";
 			this->nota_jumlahitem1->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_jumlahitem1->Size = System::Drawing::Size(20, 16);
@@ -997,7 +1034,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label24
 			// 
 			this->label24->AutoSize = true;
-			this->label24->Location = System::Drawing::Point(219, 308);
+			this->label24->Location = System::Drawing::Point(219, 348);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(193, 16);
 			this->label24->TabIndex = 14;
@@ -1008,7 +1045,7 @@ private: System::Windows::Forms::Label^ label36;
 			this->nota_total->AutoSize = true;
 			this->nota_total->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->nota_total->Location = System::Drawing::Point(496, 252);
+			this->nota_total->Location = System::Drawing::Point(496, 295);
 			this->nota_total->Name = L"nota_total";
 			this->nota_total->Size = System::Drawing::Size(58, 16);
 			this->nota_total->TabIndex = 13;
@@ -1017,7 +1054,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_nama
 			// 
 			this->nota_nama->AutoSize = true;
-			this->nota_nama->Location = System::Drawing::Point(499, 105);
+			this->nota_nama->Location = System::Drawing::Point(499, 162);
 			this->nota_nama->Name = L"nota_nama";
 			this->nota_nama->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->nota_nama->Size = System::Drawing::Size(51, 16);
@@ -1027,7 +1064,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_item3
 			// 
 			this->nota_item3->AutoSize = true;
-			this->nota_item3->Location = System::Drawing::Point(499, 201);
+			this->nota_item3->Location = System::Drawing::Point(499, 247);
 			this->nota_item3->Name = L"nota_item3";
 			this->nota_item3->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_item3->Size = System::Drawing::Size(51, 16);
@@ -1038,7 +1075,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_item2
 			// 
 			this->nota_item2->AutoSize = true;
-			this->nota_item2->Location = System::Drawing::Point(499, 175);
+			this->nota_item2->Location = System::Drawing::Point(499, 221);
 			this->nota_item2->Name = L"nota_item2";
 			this->nota_item2->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_item2->Size = System::Drawing::Size(51, 16);
@@ -1049,7 +1086,7 @@ private: System::Windows::Forms::Label^ label36;
 			// nota_item1
 			// 
 			this->nota_item1->AutoSize = true;
-			this->nota_item1->Location = System::Drawing::Point(499, 149);
+			this->nota_item1->Location = System::Drawing::Point(499, 195);
 			this->nota_item1->Name = L"nota_item1";
 			this->nota_item1->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->nota_item1->Size = System::Drawing::Size(51, 16);
@@ -1060,7 +1097,7 @@ private: System::Windows::Forms::Label^ label36;
 			// panel4
 			// 
 			this->panel4->BackColor = System::Drawing::SystemColors::ControlDark;
-			this->panel4->Location = System::Drawing::Point(16, 236);
+			this->panel4->Location = System::Drawing::Point(15, 279);
 			this->panel4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(599, 2);
@@ -1069,7 +1106,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label18
 			// 
 			this->label18->AutoSize = true;
-			this->label18->Location = System::Drawing::Point(19, 105);
+			this->label18->Location = System::Drawing::Point(72, 162);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(103, 16);
 			this->label18->TabIndex = 7;
@@ -1078,11 +1115,11 @@ private: System::Windows::Forms::Label^ label36;
 			// label17
 			// 
 			this->label17->AutoSize = true;
-			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(229, 39);
+			this->label17->Location = System::Drawing::Point(194, 37);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(170, 16);
+			this->label17->Size = System::Drawing::Size(238, 25);
 			this->label17->TabIndex = 6;
 			this->label17->Text = L"Setiap Hari Pasti Mandi";
 			// 
@@ -1099,7 +1136,7 @@ private: System::Windows::Forms::Label^ label36;
 			this->label15->AutoSize = true;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->Location = System::Drawing::Point(19, 252);
+			this->label15->Location = System::Drawing::Point(72, 295);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(51, 16);
 			this->label15->TabIndex = 4;
@@ -1108,7 +1145,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(19, 201);
+			this->label14->Location = System::Drawing::Point(72, 247);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(140, 16);
 			this->label14->TabIndex = 3;
@@ -1117,7 +1154,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(19, 175);
+			this->label13->Location = System::Drawing::Point(72, 221);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(123, 16);
 			this->label13->TabIndex = 2;
@@ -1126,7 +1163,7 @@ private: System::Windows::Forms::Label^ label36;
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(19, 149);
+			this->label11->Location = System::Drawing::Point(72, 195);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(137, 16);
 			this->label11->TabIndex = 1;
@@ -1135,11 +1172,14 @@ private: System::Windows::Forms::Label^ label36;
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(237, 21);
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(226, 21);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(153, 16);
+			this->label6->Size = System::Drawing::Size(175, 16);
 			this->label6->TabIndex = 0;
 			this->label6->Text = L"Nota Pembelian di Toko";
+			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// panel1
 			// 
@@ -1230,11 +1270,11 @@ private: System::Windows::Forms::Label^ label36;
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->ClientSize = System::Drawing::Size(1099, 638);
-			this->Controls->Add(this->panel13);
 			this->Controls->Add(this->panel9);
 			this->Controls->Add(this->nota);
 			this->Controls->Add(this->items);
 			this->Controls->Add(this->label22);
+			this->Controls->Add(this->panel13);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
@@ -1292,6 +1332,13 @@ private: System::Windows::Forms::Label^ label36;
 
 		this->nota_total->Text = "Rp" + total.ToString() + ",-";
 		this->nota_nama->Text = this->username_field->Text;
+
+		//Date of Transaction
+		DateTime _date;
+		_date = DateTime::Now;
+
+		this->transaction_date->Text = _date.Day.ToString() + "-" + _date.Month.ToString() + "-" + _date.Year.ToString();
+
 	}
 	private: System::Void item1_plus_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (stok1 == 0) {
